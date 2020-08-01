@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addblog"
+    android:orientation="vertical"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    >
+
+    <ImageButton
+        android:id="@+id/blogimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+           android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/baseline_add_a_photo_24"
+        android:fadingEdge="horizontal|vertical" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_below="@+id/blogimage"
+        android:id="@+id/blog_topic"
+        android:hint="Topic..."
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blog_topic"
+        android:id="@+id/blog_description"
+        android:hint="Description..."
+        />
+
+    <Button
+        android:id="@+id/blogpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blog_description"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#4b636e"
+        app:backgroundTint="#4b636e"
+        app:cornerRadius="8dp"
+
+        android:text="POST" />
+
+
+
+</RelativeLayout>

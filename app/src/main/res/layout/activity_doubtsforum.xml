@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    tools:context=".doubtsforum">
+
+    <!-- <com.google.android.material.button.MaterialButton
+         style="@style/Widget.AppCompat.Button.Borderless"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="UNFILLED MATERIAL BUTTON"
+         android:textColor="@color/colorAccent"
+         android:textSize="15sp"
+         app:backgroundTint="@android:color/transparent"
+         app:cornerRadius="8dp"
+         app:rippleColor="#33AAAAAA"
+         app:strokeColor="@color/colorAccent"
+         app:strokeWidth="2dp" />-->
+
+     <LinearLayout
+         android:layout_width="match_parent"
+           android:orientation="horizontal"
+         android:layout_height="wrap_content">
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/doubtsedittext"
+              android:hint="Ask your Doubt here..."
+              android:padding="10dp"
+              android:visibility="gone"
+              />
+          <Button
+              android:layout_weight="4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/ask"
+              android:text="ASK"
+              app:backgroundTint="#4b636e"
+              android:background="#4b636e"
+              android:visibility="gone"
+              />
+
+
+     </LinearLayout>
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:id="@+id/doubtsrv"
+         android:layout_height="match_parent">
+
+     </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

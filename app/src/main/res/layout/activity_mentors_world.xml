@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    tools:context=".MentorsWorld">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anything"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/doubts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4b636e"
+            android:backgroundTint="#4b636e"
+            android:text="Have any doubts, ask here...."
+            android:visibility="gone" />
+
+        <Button
+
+            android:id="@+id/Add_Posts"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_weight="1"
+            android:background="#4b636e"
+            android:backgroundTint="#4b636e"
+            android:text="Add Posts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateInfo" />
+
+        <Button
+            android:id="@+id/updateInfo"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#4b636e"
+            android:backgroundTint="#4b636e"
+            android:text="UPDATE INFORMATION"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/solvedoubts"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#4b636e"
+            android:backgroundTint="#4b636e"
+            android:text="DOUBTS"
+            app:layout_constraintEnd_toStartOf="@+id/Add_Posts"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateInfo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rrv"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/anything"
+        android:layout_marginVertical="50dp"
+        android:layout_marginTop="-41dp"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    tools:context=".updateInfo">
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/profileimage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        android:background="@drawable/round_account_circle_24"
+        />
+
+    <EditText
+         android:layout_below="@+id/profileimage"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp"
+        android:hint="Name"
+        android:textSize="24dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:layout_below="@+id/name"
+        android:hint="Category"
+        android:layout_marginVertical="10dp"
+        android:padding="10dp"
+        android:textSize="24dp"
+        /><EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@+id/category"
+    android:id="@+id/yoe"
+    android:hint="Years Of Experience"
+    android:layout_marginVertical="10dp"
+    android:padding="10dp"
+    android:textSize="24dp"
+    /><EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cwi"
+    android:layout_below="@+id/yoe"
+
+    android:hint="Currently Working In ?"
+    android:layout_marginVertical="10dp"
+    android:padding="10dp"
+    android:textSize="24dp"
+    />
+
+    <Button
+        android:id="@+id/finallyUpdate"
+        android:background="#4b636e"
+        app:backgroundTint="#4b636e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cwi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="19dp"
+        android:text="SAVE"
+        android:textColor="@color/cardview_light_background"
+
+        android:textSize="30dp" />
+
+</RelativeLayout>

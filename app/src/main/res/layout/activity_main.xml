@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENTOR'S CORNER"
+        android:fontFamily="cursive"
+
+        android:textSize="40dp"
+        android:id="@+id/id"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+        android:background="#78909c"
+        android:backgroundTint="#78909c"
+        android:elevation="10dp"
+        app:cardElevation="15dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button">
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/Students_section"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+
+            app:cardElevation="15dp"
+
+            android:text="STUDENTS' SECTION"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:background="#4b636e"
+            app:backgroundTint="#4b636e"
+            app:cornerRadius="8dp"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="#4b636e"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:id="@+id/MENTORS_SECTION"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="230dp"
+            app:cardElevation="15dp"
+
+            android:text="MENTOR'S SECTION"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:background="#4b636e"
+            app:backgroundTint="#4b636e"
+            app:cornerRadius="8dp"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="#4b636e"
+            app:strokeWidth="2dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/Students_section"
+         android:text="STUDENTS' SECTION"
+         android:layout_marginTop="450dp"
+         />
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/MENTORS_SECTION"
+         android:text="MENTORS' SECTION"
+         android:layout_below="@+id/Students_section"
+         android:layout_marginTop="10dp"
+
+         />-->
+
+</RelativeLayout>

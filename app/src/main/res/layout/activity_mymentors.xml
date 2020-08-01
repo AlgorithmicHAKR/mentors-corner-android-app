@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mymentorsrl"
+    android:backgroundTint="#a7c0cd"
+    android:background="#a7c0cd"
+    tools:context=".Mymentors">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        android:id="@+id/mymentorsadd"
+        android:background="#4b636e"
+        android:text="ADD NEW MENTOR"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:backgroundTint="#4b636e"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="#4b636e"
+        app:strokeWidth="2dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:backgroundTint="#a7c0cd"
+        android:background="#a7c0cd"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mymentorsadd"
+        android:id="@+id/mymentorsrv"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

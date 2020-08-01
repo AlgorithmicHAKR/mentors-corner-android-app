@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@android:color/darker_gray"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    android:background="#4b636e"
+    app:backgroundTint="#4b636e"
+    >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView  android:background="#4b636e"
+             app:backgroundTint="#4b636e"
+             android:textSize="30dp"
+             android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/mentortopic"
+             android:textColor="#FFFF"
+             android:text="product name"
+             />
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/mentortopic"
+             android:adjustViewBounds="true"
+             android:scaleType="centerCrop"
+             android:id="@+id/asingleitemimage"
+             />
+
+     </RelativeLayout>
+</androidx.cardview.widget.CardView>
